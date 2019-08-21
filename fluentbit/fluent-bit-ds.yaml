@@ -27,13 +27,13 @@ spec:
           - containerPort: 2020
         env:
         - name: FLUENT_HTTP_HOST
-          value: "your.host.com"
+          value: ${FLUENT_HTTP_HOST}
         - name: FLUENT_HTTP_PORT
-          value: "host_port"
+          value: ${FLUENT_HTTP_PORT}
         - name: FLUENT_HTTP_URI
-          value: "/xxx"
+          value: ${FLUENT_HTTP_URI}
         - name: FLUENT_HTTP_HEADER
-          value: "xxxx xxxx"
+          value: ${FLUENT_HTTP_HEADER}
         volumeMounts:
         - name: varlog
           mountPath: /var/log
