@@ -51,10 +51,10 @@ data:
     [OUTPUT]
         Name            http
         Match           *
-        Host            ${FLUENT_HTTP_HOST}
-        Port            ${FLUENT_HTTP_PORT}
-        Header          ${FLUENT_HTTP_HEADER}
-        URI             ${FLUENT_HTTP_URI}
+        Host            ${ENV_FLUENT_HTTP_HOST}
+        Port            ${ENV_FLUENT_HTTP_PORT}
+        Header          ${ENV_FLUENT_HTTP_HEADER}
+        URI             ${ENV_FLUENT_HTTP_URI}
         Format          json
 
   parsers.conf: |
